@@ -1,17 +1,23 @@
 package step1;
 
-/** [문제]
- * 대한비만학회는 기존에는 BMI가 
- * 18.5 미만이면 저체중, 18.5∼23은 정상, 23~25이면 과체중, 25∼30은 경도비만, 
- * 30∼35는 중등도비만 , 35 이상이면 고도비만으로 구분했었으나, 
- * 2018년 비만진료지침에서 단계별 용어가 새롭게 변경되어 
- * 18.5 미만이면 저체중, 18.5∼23은 정상, 23~25이면 '비만 전단계'[5], 
- * 25∼30은 '1단계 비만', 30∼35는 '2단계 비만' , 35 이상이면 '3단계 비만'으로 구분한다. 
+/**
+BMI = 몸무게 / 키² 로서, 
+여기서 몸무게는 kg, 키는 m 단위이다. 
+예를 들자면, 
+몸무게 55kg에 키 1.68m인 사람의 BMI는 
+55kg/(1.68m)^2 = 19.4이다.
+2018년 비만진료지침에서 단계별 용어가 새롭게 변경되어 
+18.5 미만이면 저체중, 
+18.5∼23은 정상, 
+23~25이면 '비만 전단계'[5], 
+25∼30은 '1단계 비만', 
+30∼35는 '2단계 비만' , 
+35 이상이면 '3단계 비만'으로 구분한다.
  * */
 
 import java.util.Scanner;
 
-public class Bmi {
+public class BMI {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 	
@@ -24,7 +30,7 @@ public class Bmi {
 				return;
 			case 1:
 				System.out.println("귀하의 키를 Cm로 입력해주세요.");
-				double hh = scan.nextDouble();
+				int hh = scan.nextInt();
 				double h = hh / 100;
 				System.out.println("귀하의 몸무게를 Kg으로 입력해주세요.");
 				int w = scan.nextInt();

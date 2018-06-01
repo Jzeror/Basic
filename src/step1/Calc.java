@@ -1,5 +1,9 @@
 package step1;
 
+/**
+ 값을 두개 입력받아서 오칙연산(+,-,*,/,%)
+ * */
+
 import java.util.Scanner;
 
 public class Calc {

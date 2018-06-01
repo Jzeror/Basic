@@ -1,16 +1,29 @@
 package step1;
 
+/**
+ [요구사항] 평균 점수에 따라 A ~ F 까지 등급을 부여하는
+프로그램을 작성해 주시오.
+100 ~ 90 A
+89 ~ 80 B
+79 ~ 70 C
+69 ~ 60 D
+59 ~ 50 E
+49 ~ 0 F
+화면 출력은 다음과 같습니다.
+********************************
+| 이름 | 총점 | 평균 등급 |
+--------------------------------
+| 홍길동 | 270 | 90 | A |
+ */
 import java.util.Scanner;
 
-public class GradeReport01 {
+public class GradeReport {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		while (true) {
 			System.out.println("0.종료 1.실행");
 			int flag = scan.nextInt();
-
 			switch (flag) {
-
 			case 0:
 				System.out.println("종료합니다.");
 				return;
