@@ -4,11 +4,18 @@ package step2;
  * */
 import java.util.Scanner;
 
-
-
-
-
 public class RPSGame {
+	
+	public static int[] input(Scanner scan) {
+		int[] arr=new int[2];
+		System.out.print("플레이어1 주(1), 보(2), 가(3) 중에 하나");
+		arr[0]= Integer.parseInt( scan.next());
+		System.out.print("플레이어2 주(1), 보(2), 가(3) 중에 하나");
+		arr[1] = Integer.parseInt(scan.next());
+		
+		return arr;
+	}
+	
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 
@@ -22,14 +29,12 @@ public class RPSGame {
 				return;
 			case 1:
 
-				System.out.print("플레이어1 주(1), 보(2), 가(3) 중에 하나");
-				int P1 = scan.nextInt();
-				System.out.print("플레이어2 주(1), 보(2), 가(3) 중에 하나");
-				int P2 = scan.nextInt();
-				if (P1 == P2) {
+				int[] arr=input(scan);
+
+				if (arr[0] == arr[1]) {
 					System.out.println("무승부하였습니다.");
 
-				} else if (P1 > P2) {
+				} else if (arr[0] > arr[1]) {
 					System.out.println("플레이어1이 승리");
 				} else {
 					System.out.println("플레이어2가 승리");
