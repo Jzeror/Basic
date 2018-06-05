@@ -1,4 +1,4 @@
-package step2;
+package step3;
 
 /**
  [요구사항] 평균 점수에 따라 A ~ F 까지 등급을 부여하는
@@ -17,7 +17,7 @@ package step2;
  */
 import java.util.Scanner;
 
-public class GradeReport3 {
+public class GradeReport {
 
 	public static boolean input(int temp) {
 		return (temp >= 0 && temp <= 100) ? true : false;
