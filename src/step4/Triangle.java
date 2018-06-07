@@ -9,7 +9,7 @@ public class Triangle {
 		System.out.println("몇 배열?");
 		int a = sc.nextInt();
 		int k = 0;
-		int[][] mtx = new int[2 * a+1][a];
+		int[][] mtx = new int[2 * a-1][a];
 		for (int j=0;j<=a-1;j++) {
 			for (int i=a-j-1; i<=a+j-1;i++) {
 				k++;
@@ -18,7 +18,7 @@ public class Triangle {
 		}
 		for (int i = 0; i < 2*a-1; i++) {
 			for (int j =0; j <=a-1; j++) {
-				System.out.print(mtx[i][j]);
+				System.out.print(mtx[i][j]+"");
 			}
 			System.out.println();
 		}
