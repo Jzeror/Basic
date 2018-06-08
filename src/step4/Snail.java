@@ -24,6 +24,5 @@ public class Snail {
                                     System.out.println();
                     }
     }
-
 }
 
