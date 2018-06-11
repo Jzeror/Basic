@@ -5,7 +5,6 @@ import step5.Butt;
 enum Butt {
 	EXIT, INPUT, LIST;
 }
-
 public class Salary {
 	public static void main(String[] args) {
 		String[] arr = new String[4];
